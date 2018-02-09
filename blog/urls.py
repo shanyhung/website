@@ -1,5 +1,5 @@
 from django.conf.urls import url
-
+from . import views
 urlpatterns = [
-    url(r'^$', 'blog/post_list.html')
+    url(r'^$', views.post_list)
 ]
